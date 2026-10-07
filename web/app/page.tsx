@@ -6,15 +6,18 @@ import {
   Sparkles,
   ArrowRight,
   TrendingUp,
-  Cpu,
   Zap,
-  ShoppingBag,
-  SlidersHorizontal,
   RefreshCw,
   Layers,
   Database,
   Timer,
   CheckCircle2,
+  Eye,
+  Target,
+  RotateCcw,
+  ShieldCheck,
+  HeartHandshake,
+  Compass,
 } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import {
@@ -176,6 +179,226 @@ export default function StorefrontHome() {
               <span>Go to Admin & MLOps Dashboard</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works & Benefits Section */}
+      <section
+        id="how-it-works"
+        className="datta-card relative p-8 sm:p-10 bg-white dark:bg-[#2b2c2f] border border-slate-200/80 dark:border-slate-800 space-y-8 overflow-hidden scroll-mt-20"
+      >
+        <div className="h-1.5 w-full absolute top-0 left-0 bg-gradient-to-r from-[#1dc4e9] via-[#04a9f5] to-[#a389d4]"></div>
+
+        {/* Section Header */}
+        <div className="max-w-3xl space-y-3">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-800 text-cyan-600 dark:text-cyan-400 text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>How It Works</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-800 dark:text-white tracking-tight">
+            Real-Time AI Recommendations, Explained Simply
+          </h2>
+          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Most online stores show static lists or update their suggestions once a day. 
+            <strong> RecommendationOS</strong> learns your taste as you click and delivers fresh, personalized recommendations within 
+            <span className="font-semibold text-cyan-600 dark:text-cyan-400"> 5 milliseconds</span>.
+          </p>
+        </div>
+
+        {/* 4 Step Visual Flow */}
+        <div className="space-y-4">
+          <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            The 4-Step Process: From Click to Recommendation
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Step 1 */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700 space-y-3 hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-9 h-9 rounded-xl bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
+                    <Eye className="w-4 h-4" />
+                  </div>
+                  <span className="text-[11px] font-mono font-bold text-slate-400 bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700">
+                    STEP 01
+                  </span>
+                </div>
+                <h3 className="font-bold text-sm text-slate-800 dark:text-white">
+                  You Browse &amp; Interact
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  As you view items, click products, or make purchases, the site naturally observes your preferences without asking you to fill out surveys.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-[11px] font-semibold text-cyan-600 dark:text-cyan-400 flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Zero effort required</span>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700 space-y-3 hover:border-violet-500/50 transition-all flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-9 h-9 rounded-xl bg-violet-50 dark:bg-violet-950/60 text-violet-600 dark:text-violet-400 flex items-center justify-center">
+                    <Zap className="w-4 h-4" />
+                  </div>
+                  <span className="text-[11px] font-mono font-bold text-slate-400 bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700">
+                    STEP 02
+                  </span>
+                </div>
+                <h3 className="font-bold text-sm text-slate-800 dark:text-white">
+                  Instant Neural Understanding
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  In under 5ms, our Two-Tower neural network translates your actions into an instant taste profile reflecting your current shopping mood.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-[11px] font-semibold text-violet-600 dark:text-violet-400 flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Sub-5ms calculation</span>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700 space-y-3 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-9 h-9 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                    <Target className="w-4 h-4" />
+                  </div>
+                  <span className="text-[11px] font-mono font-bold text-slate-400 bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700">
+                    STEP 03
+                  </span>
+                </div>
+                <h3 className="font-bold text-sm text-slate-800 dark:text-white">
+                  Precision Product Matching
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Vector search scans 500 catalog items to surface the highest scoring matches, balancing personal taste, popularity, and catalog freshness.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Filtered &amp; deduplicated</span>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700 space-y-3 hover:border-amber-500/50 transition-all flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-9 h-9 rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                    <RotateCcw className="w-4 h-4" />
+                  </div>
+                  <span className="text-[11px] font-mono font-bold text-slate-400 bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700">
+                    STEP 04
+                  </span>
+                </div>
+                <h3 className="font-bold text-sm text-slate-800 dark:text-white">
+                  Live In-Session Adaptation
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Changed your interest? As you click new items, streaming online learning updates recommendations instantly on the fly.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-[11px] font-semibold text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Immediate session update</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className="space-y-4 pt-2">
+          <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            Key Benefits for You as a User
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex-shrink-0">
+                <TrendingUp className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Find What You Love Faster
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  No more endless page flipping. Discover relevant products immediately on arrival.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex-shrink-0">
+                <Zap className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Zero Lag Shopping
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Under 5 millisecond inference means instant recommendations with zero delay or lag.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-violet-50 dark:bg-violet-950/60 text-violet-600 dark:text-violet-400 flex-shrink-0">
+                <Compass className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Great for First-Time Guests
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  No account history? Intelligent cold-start curation immediately shows trending essentials.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex-shrink-0">
+                <ShieldCheck className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Diverse, Balanced Choices
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Fairness algorithms avoid repetitive items, giving you fresh discoveries every session.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex-shrink-0">
+                <Layers className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Transparent Explanations
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  See why each item was selected with clear scoring tags and similarity rationale.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/70 dark:border-slate-700/70 flex items-start space-x-3.5">
+              <div className="p-2 rounded-lg bg-violet-50 dark:bg-violet-950/60 text-violet-600 dark:text-violet-400 flex-shrink-0">
+                <HeartHandshake className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="font-bold text-xs text-slate-800 dark:text-white mb-1">
+                  Adapts As Your Intent Shifts
+                </h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Swapping from tech gadgets to smart office supplies? The feed dynamically shifts with you.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

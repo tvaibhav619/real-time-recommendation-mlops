@@ -109,6 +109,12 @@ export default function Navbar() {
               >
                 Live Telemetry
               </Link>
+              <Link
+                href="/#how-it-works"
+                className="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-all"
+              >
+                How It Works
+              </Link>
             </nav>
           ) : (
             <div className="hidden lg:flex items-center space-x-2 text-xs font-bold text-slate-500">

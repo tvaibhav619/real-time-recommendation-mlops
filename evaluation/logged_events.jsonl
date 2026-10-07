@@ -79557,3 +79557,12 @@
 {"user_id": 402, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T17:24:30.173482"}
 {"user_id": 697, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T17:25:28.881566"}
 {"user_id": 791, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T19:06:28.072352"}
+{"user_id": 145, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T20:15:39.571158"}
+{"user_id": 232, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T20:28:31.521696"}
+{"user_id": 994, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T20:36:08.829181"}
+{"user_id": 91, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-09-27T20:36:53.689350"}
+{"user_id": 380, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-10-01T15:10:46.874579"}
+{"user_id": 57, "item_id": 264, "action": "purchase", "propensity": 0.1, "timestamp": "2026-10-01T15:11:17.037188"}
+{"user_id": 18, "item_id": 64, "action": "view", "propensity": 0.1, "timestamp": "2026-10-01T15:11:17.037188"}
+{"user_id": 5, "item_id": 84, "action": "purchase", "propensity": 0.1, "timestamp": "2026-10-01T15:11:17.037188"}
+{"user_id": 463, "item_id": 12, "action": "view", "propensity": 0.1, "timestamp": "2026-10-07T13:25:34.448850"}
